@@ -1,7 +1,22 @@
 #lang racket    
 
-(define in 23)
+(define in (read))
+(define newline "\n")
 
+(define get-type
+    (lambda (x)
+  (cond
+    ((number? x) "Number")
+    ((string? x) "String")
+    ((list? x) "List"))))
+
+; logs the data being process, along with a type check 
+(display newline)
+(display (string-append "processing: " in newline))
+(display (string-append "with data type of " (get-type in) newline))
+(display newline)
+
+; Data converter - data is converted with "magic" 
 (define (checker x)
     (cond 
         [(string? x)
