@@ -3,8 +3,8 @@
 ; Libs
 (require "to-string.rkt")
 
-(define (add-newline str)
-    (string-append str "\n"))
+(define (add-newline output)
+    (string-append output "\n"))
 
 (define (display-with-newline output)
   (display (add-newline (to-string output))))
