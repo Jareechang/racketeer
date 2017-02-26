@@ -4,12 +4,7 @@
 (require "lib/to-string.rkt")
 (require "lib/display-with-newline.rkt")
 
-; Helper methods 
-
-
-
 ; Ex. 11
-
 ; Define a function that takes (x, y) and 
 ; computes distance to origin
 
